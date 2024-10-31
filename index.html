@@ -100,10 +100,18 @@
                 return false;
             });
              // top 버튼 추가하기
-           $('footer').prepend('<a href="#" class="top">Top</a>');
+           $('footer').prepend('<a href="#" class="top" style="display:none;">Top</a>');
            $("footer a.top").click(function(){
             $("html,body").animate({scrollTop:0},1500);
            });
+            // 스크롤 이벤트 리스너
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $("footer a.top").fadeIn(); // 스크롤 위치가 100px 이상일 때 버튼 보이기
+                } else {
+                    $("footer a.top").fadeOut(); // 그렇지 않으면 버튼 숨기기
+                }
+            });
         });
     </script>
     <script>
@@ -307,7 +315,7 @@
                                 </ul>
                             </li>
                             <li><strong class="bold">기여도</strong>80% (디자인, 퍼블리싱 및 테스트)</li>
-                            <li class="flex"><a href="https://github.com/zlzltjddms/pf1" class="block b-medium rounded border1">깃허브 소스보기</a><a href="https://zlzltjddms.github.io/pf-1/" class="block b-medium blue rounded">작품보기</a></li>
+                            <li class="flex"><a href="https://github.com/conteenue/pf1" class="block b-medium rounded border1">깃허브 소스보기</a><a href="https://conteenue.github.io/pf1/" class="block b-medium blue rounded">작품보기</a></li>
                         </ul>
                     </div>
                 </li>
@@ -333,7 +341,7 @@
                                 </ul>
                             </li>
                             <li><strong class="bold">기여도</strong>100% (단독 프로젝트)</li>
-                            <li class="flex"><a href="https://github.com/zlzltjddms/pf2" class="block b-medium rounded border1">깃허브 소스보기</a><a href="https://zlzltjddms.github.io/pf2/" class="block b-medium blue rounded">작품보기</a></li>
+                            <li class="flex"><a href="https://github.com/conteenue/pf2" class="block b-medium rounded border1">깃허브 소스보기</a><a href="https://conteenue.github.io/pf2/" class="block b-medium blue rounded">작품보기</a></li>
                         </ul>
                     </div>
                 </li>
@@ -359,7 +367,7 @@
                             </ul>
                         </li>
                         <li><strong class="bold">기여도</strong>90% (디자인, 퍼블리싱 및 테스트)</li>
-                        <li class="flex"><a href="https://github.com/zlzltjddms/pf3" class="block b-medium rounded border1">깃허브 소스보기</a><a href="https://zlzltjddms.github.io/pf3/" class="block  b-medium blue rounded">작품보기</a></li>
+                        <li class="flex"><a href="https://github.com/conteenue/pf3" class="block b-medium rounded border1">깃허브 소스보기</a><a href="https://conteenue.github.io/pf3/" class="block  b-medium blue rounded">작품보기</a></li>
                     </ul>
                 </div>
                 </li>
@@ -385,7 +393,7 @@
                                 </ul>
                             </li>
                             <li><strong class="bold">기여도</strong>80% (디자인, 퍼블리싱 및 테스트)</li>
-                            <li class="flex"><a href="https://github.com/zlzltjddms/pf4/" class="block b-medium rounded border1">깃허브 소스보기</a><a href="https://zlzltjddms.github.io/pf4/" class="block b-medium blue rounded">작품보기</a></li>
+                            <li class="flex"><a href="https://github.com/conteenue/pf4/" class="block b-medium rounded border1">깃허브 소스보기</a><a href="https://conteenue.github.io/pf4/" class="block b-medium blue rounded">작품보기</a></li>
                         </ul>
                     </div>
                 </li>
@@ -411,7 +419,7 @@
                                 </ul>
                             </li>
                             <li><strong class="bold">기여도</strong>100% (단독 프로젝트)</li>
-                            <li class="flex"><a href="https://github.com/zlzltjddms/personal" class="block b-medium rounded border1">깃허브 소스보기</a><a href="https://zlzltjddms.github.io/personal/" class="block  b-medium blue rounded">작품보기</a></li>
+                            <li class="flex"><a href="https://github.com/conteenue/personal" class="block b-medium rounded border1">깃허브 소스보기</a><a href="https://conteenue.github.io/personal/" class="block  b-medium blue rounded">작품보기</a></li>
                         </ul>
                     </div>
                 </li>
@@ -437,7 +445,7 @@
                                 </ul>
                             </li>
                             <li><strong class="bold">기여도</strong>90% (디자인, 퍼블리싱 및 테스트)</li>
-                            <li class="flex"><a href="https://github.com/zlzltjddms/nhn" class="block b-medium rounded border1">깃허브 소스보기</a><a href="https://zlzltjddms.github.io/NHN/" class="block  b-medium blue rounded">작품보기</a></li>
+                            <li class="flex"><a href="https://github.com/conteenue/nhn" class="block b-medium rounded border1">깃허브 소스보기</a><a href="https://conteenue.github.io/NHN/" class="block  b-medium blue rounded">작품보기</a></li>
                         </ul>
                     </div>
                 </li>
