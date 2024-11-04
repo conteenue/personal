@@ -104,7 +104,7 @@ header div.wrap nav ul.enb li:nth-child(3) a{
   display: none;
 }
 header div.wrap nav ul.gnb li a:hover {
-  color: #215cc3;
+  color: #f4f13f;
 }
 header div.wrap nav ul.gnb li a::before{
   content: "";
