@@ -40,7 +40,7 @@ header div.wrap nav h1 {
 header div.wrap nav h1 a {
   font-size: 0;
   background-image: url(../img/logo.png);
-  width: 70px;
+  width: 60px;
   height: 50px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -88,8 +88,8 @@ header div.wrap nav ul.enb li a {
   color: #333;
   font-weight: bold;
   font-size: 0;
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -809,7 +809,7 @@ section::before {
   }
 }
 #portfolio div.wrap ul.list li figure figcaption {
-  /*! display: none; */
+  display: none;
   position: absolute;
   width: 100%;
   bottom: 26px;
