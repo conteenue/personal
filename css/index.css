@@ -98,6 +98,8 @@ header div.wrap nav ul.enb li:nth-child(1) a{
 }
 header div.wrap nav ul.enb li:nth-child(2) a{
   background-image: url(../img/kakao.svg);
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 header div.wrap nav ul.enb li:nth-child(3) a{
   background-image: url(../img/menu.svg);
